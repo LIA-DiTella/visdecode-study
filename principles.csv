@@ -1,0 +1,57 @@
+Type,Number,Name,Draco Description,VisDecode Description,Example
+Hard,12,size_negative,Do not use size when data is negative as size implies that data is positive.,Don't use size encoding when data is negative as size implies that data is positive.,[12] size_negative.png
+Hard,24,line_area_with_discrete,Line and area cannot have both x and y discrete.,Don't make a line/area plot when both x and y are discrete,[24] line_area_with_discrete.png
+Hard,25,bar_tick_continuous_x_y,Bar and tick cannot have both x and y continuous.,Don't make a bar/tick plot when both x and y are continuos,[25] bar_tick_continuous_x_y.png
+Hard,27,shape_without_point,Shape channel requires point mark.,Use the shape encoding only with the point mark,[27] shape_without_point.png
+Hard,30,area_bar_with_log,Do not use log for bar or area mark as they are often misleading. We may remove this rule in the future.,Don't use the log scale for bar/area,[30] area_bar_with_log.png
+Hard,31,rect_without_d_d,Rect mark needs discrete x and y.,Use rect mark only when x and y are discrete,[31] rect_without_d_d.png
+Hard,32,same_field_x_and_y,Don't use the same field on x and y.,Don't use the same filed for the encoding x and y,[32] same_field_x_and_y.png
+Hard,36,bar_tick_area_line_without_continuous_x_y,"Bar, tick, line, area require some continuous variable on x or y.","The marks bar, tick, line, and area require that either x or y is continuos",[36] bar_tick_area_line_without_continuous_x_y.png
+Hard,40,row_no_y,"For charts in a row, use a share y-axis","For charts in a row, use a share y-axis",[40] row_no_y.png
+Hard,41,col_no_x,"For charts in a column, use a share x-axis","For charts in a column, use a share x-axis",[41] col_no_x.png
+Hard,46,no_stack_with_bar_area_discrete_color,"Need to stack if we use bar, area with discrete color.",,[46] no_stack_with_bar_area_discrete_color.png
+Hard,47,stack_without_discrete_color_or_detail,"Can only use stack if we also use discrete color, or detail.","If stack is used, color should also be used to identificate the stack elements.",[47] stack_without_discrete_color_or_detail.png
+Hard,49,stack_discrete,Stack can only be on continuous.,Stack can only be on continuous.,[49] stack_discrete.png
+Soft,5,encoding_field,Prefer to use fewer encodings with fields (count does not have a field).,Use the lowest quantity of encodings possible,[5] encoding_field.png
+Soft,6,same_field,Prefer not to use the same field twice on two different encodings,Don't encode the same field in two distinct ways,[6] same_field.png
+Soft,7,same_field_grt3,Prefer not to use the same field twice on three or more different encodings,Don't encode the same field in three or more distinct ways,[7] same_field_grt3.png
+Soft,9,number_categorical,Should not use categorical scale for number field.,Don't use categorical scale for number field.,[9] number_categorical.png
+Soft,12,only_discrete,Only discrete encoding channels are used in a mark.,Don't use only discrete encodings; a continuous one would help.,[12] only_discrete.png
+Soft,13,multi_non_pos,Prefer not to use multiple non-positional encoding channels.,Don't use multiple non-positional encodings (like size and color),[13] multi_non_pos.png
+Soft,14,non_pos_used_before_pos,Prefer not to use non-positional channels until all positional channels are used.,Use the non-positional encodings only if the positional encodings are already used,[14] non_pos_used_before_pos.png
+Soft,23,only_y,Prefer to use only x instead of only y.,Prefer to use only x instead of only y.,[23] only_y.png
+Soft,25,high_cardinality_ordinal,Don't use ordinal for fields with high cardinality.,Don't use ordinal scale for fields with high cardinality.,[25] high_cardinality_ordinal.png
+Soft,26,high_cardinality_categorical_grt10,Prefer not to use categorical (color) for fields with high cardinality.,Don't use color encoding for field with high cardinality,[26] high_cardinality_categorical_grt10.png
+Soft,27,high_cardinality_shape,Prefer not to use high cardinality ordinal for shape.,Don't use shape encoding for field with high cardinality,[27] high_cardinality_shape.png
+Soft,28,high_cardinality_size,Prefer not to use size when the cardinality is large on x or y.,Don't use size encoding if there is a high cardinality on x or y,[28] high_cardinality_size.png
+Soft,29,horizontal_scrolling_x,Avoid high cardinality on x as it causes horizontal scrolling.,Avoid high cardinality on x as it causes horizontal scrolling.,[29] horizontal_scrolling_x.png
+Soft,30,horizontal_scrolling_col,Avoid high cardinality on column as it causes horizontal scrolling.,Avoid high cardinality on column as it causes horizontal scrolling.,[30] horizontal_scrolling_col.png
+Soft,36,c_d_col,"Prefer not to use continuous on x, discrete on y, and column.","Don't use continuous on x, discrete on y, and column.",[36] c_d_col.png
+Soft,37,date_not_x,Prefer datetime on x.,Datetime should be on x.,[37] date_not_x.png
+Soft,38,x_row,Positional interactions as suggested by Kim et al.,Using facet row with the mark x,[39] y_row.png
+Soft,39,y_row,Positional interactions as suggested by Kim et al.,Using facet row with the mark y,[39] y_row.png
+Soft,40,x_col,Positional interactions as suggested by Kim et al.,Using facet column with the mark x,[41] y_col.png
+Soft,41,y_col,Positional interactions as suggested by Kim et al.,Using facet column with the mark y,[41] y_col.png
+Soft,47,log_scale,log scale.,"The log scale is being used, be careful",[47] log_scale.png
+Soft,48,ordinal_scale,ordinal scale.,The ordinal scale is being used,[48] ordinal_scale.png
+Soft,49,categorical_scale,categorical scale.,The categorical scale is being used,[49] categorical_scale.png
+Soft,51,c_c_line,Continuous by continuous for line mark.,Using line mark when both x and y are continuous,[51] c_c_line.png
+Soft,52,c_c_area,Continuous by continuous for area mark.,Using area mark when both x and y are continuous,[52] c_c_area.png
+Soft,54,c_d_overlap_point,Continuous by discrete for point mark.,Using point mark when plotting a continuous variable against a discrete one and there is overlap,[54] c_d_overlap_point.png
+Soft,55,c_d_overlap_bar,Continuous by discrete for bar mark.,Using bar mark when plotting a continuous variable against a discrete one and there is overlap,[55] c_d_overlap_bar.png
+Soft,56,c_d_overlap_line,Continuous by discrete for line mark.,Using line mark when plotting a continuous variable against a discrete one and there is overlap,[56] c_d_overlap_line.png
+Soft,57,c_d_overlap_area,Continuous by discrete for area mark.,Using area mark when plotting a continuous variable against a discrete one and there is overlap,[57] c_d_overlap_area.png
+Soft,60,c_d_no_overlap_point,Continuous by discrete for point mark.,Using point mark when plotting a continuous variable against a discrete one and there is no overlap,[60] c_d_no_overlap_point.png
+Soft,62,c_d_no_overlap_line,Continuous by discrete for line mark.,Using line mark when plotting a continuous variable against a discrete one and there is no overlap,[62] c_d_no_overlap_line.png
+Soft,63,c_d_no_overlap_area,Continuous by discrete for area mark.,Using area mark when plotting a continuous variable against a discrete one and there is no overlap,[63] c_d_no_overlap_area.png
+Soft,72,linear_color,Linear scale with color channel.,The linear scale is used with the color channel.,[72] linear_color.png
+Soft,73,linear_size,Linear scale with size channel.,The linear scale is used with the size channel.,[73] linear_size.png
+Soft,77,log_color,Log scale with color channel.,The log scale is used with the color channel.,[77] log_color.png
+Soft,78,log_size,Log scale with size channel.,The log scale is used with the size channel.,[78] log_size.png
+Soft,80,ordinal_x,Ordinal scale with x channel.,The ordinal scale is used with the x channel,[80] ordinal_scale.png
+Soft,82,ordinal_color,Ordinal scale with color channel.,The ordinal scale is used with the color channel,[82] ordinal_color.png
+Soft,83,ordinal_size,Ordinal scale with size channel.,The ordinal scale is used with the size channel,[83] ordinal_size.png
+Soft,84,ordinal_shape,Ordinal scale with shape channel.,The ordinal scale is used with the shape channel,[84] ordinal_shape.png
+Soft,87,categorical_color,Categorical scale with color channel.,The categorical scale is used with the color channel,[87] categorical_color.png
+Soft,97,stack_normalize,Normalize between groupbys as stack op.,Using normalized as a stack function,[97] stack_normalize.png
+Soft,146,polar_coordinate,Polar coordinates.,Using polar coordinates,[146] polar_coordinate.png
