@@ -5,7 +5,7 @@
 > Universidad Torcuato Di Tella · CONICET · Universidad de Buenos Aires  
 
 [![arXiv](https://img.shields.io/badge/arXiv-Read%20Paper-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX)
-[![Principles](https://img.shields.io/badge/Principles-Browse%20Corpus%20-28a745.svg)](docs/principles.md)
+[![Principles](https://img.shields.io/badge/Principles-CSV%20-28a745.svg)](principles.csv)
 
 ---
 
