@@ -9,7 +9,7 @@ Hard,32,same_field_x_and_y,Don't use the same field on x and y.,Don't use the sa
 Hard,36,bar_tick_area_line_without_continuous_x_y,"Bar, tick, line, area require some continuous variable on x or y.","The marks bar, tick, line, and area require that either x or y is continuos",[36] bar_tick_area_line_without_continuous_x_y.png
 Hard,40,row_no_y,"For charts in a row, use a share y-axis","For charts in a row, use a share y-axis",[40] row_no_y.png
 Hard,41,col_no_x,"For charts in a column, use a share x-axis","For charts in a column, use a share x-axis",[41] col_no_x.png
-Hard,46,no_stack_with_bar_area_discrete_color,"Need to stack if we use bar, area with discrete color.",,[46] no_stack_with_bar_area_discrete_color.png
+Hard,46,no_stack_with_bar_area_discrete_color,"Need to stack if we use bar, area with discrete color.","Need to stack if we use bar, area with discrete color.",[46] no_stack_with_bar_area_discrete_color.png
 Hard,47,stack_without_discrete_color_or_detail,"Can only use stack if we also use discrete color, or detail.","If stack is used, color should also be used to identificate the stack elements.",[47] stack_without_discrete_color_or_detail.png
 Hard,49,stack_discrete,Stack can only be on continuous.,Stack can only be on continuous.,[49] stack_discrete.png
 Soft,5,encoding_field,Prefer to use fewer encodings with fields (count does not have a field).,Use the lowest quantity of encodings possible,[5] encoding_field.png
@@ -54,4 +54,5 @@ Soft,83,ordinal_size,Ordinal scale with size channel.,The ordinal scale is used 
 Soft,84,ordinal_shape,Ordinal scale with shape channel.,The ordinal scale is used with the shape channel,[84] ordinal_shape.png
 Soft,87,categorical_color,Categorical scale with color channel.,The categorical scale is used with the color channel,[87] categorical_color.png
 Soft,97,stack_normalize,Normalize between groupbys as stack op.,Using normalized as a stack function,[97] stack_normalize.png
+
 Soft,146,polar_coordinate,Polar coordinates.,Using polar coordinates,[146] polar_coordinate.png
