@@ -1,0 +1,161 @@
+name: size_negative
+A violation occurs if a channel is encoded with size and the corresponding field contains both negative and positive values. The size encoding implies positive magnitude, so it should not be used when the data includes negative values.
+
+name: line_area_with_discrete
+A violation occurs when a line or area chart is used and both the x and y channels are encoded with discrete scales. Line and area marks are intended for continuous data and do not function correctly with fully discrete axes.
+
+name: bar_tick_continuous_x_y
+A violation occurs if a bar or tick chart is used and both the x and y channels are continuous. These mark types are designed to compare discrete categories and are not suitable for continuous–continuous configurations.
+
+name: shape_without_point
+A violation occurs when the shape channel is used but the mark type is not point. The shape encoding is only meaningful when applied to point marks.
+
+name: size_without_point_text
+A violation occurs if the size channel is used with a mark type that is neither point nor text. Only point and text marks properly support the size encoding.
+
+name: area_bar_with_log
+A violation occurs when a bar or area chart uses a logarithmic scale on either the x or y axis. Using log scales with these mark types can produce misleading visuals and should be avoided.
+
+name: rect_without_d_d
+A violation occurs if a rect mark is used and either the x or y channel is continuous. Rect marks require both axes to be discrete to represent a meaningful tiled layout.
+
+name: same_field_x_and_y
+A violation occurs when the same field is assigned to both the x and y channels of a single mark. This redundancy creates a chart that is either meaningless or visually confusing.
+
+name: bar_tick_area_line_without_continuous_x_y
+A violation occurs when a chart uses a bar, tick, area, or line mark but neither the x nor y channel is continuous. These marks depend on at least one continuous axis to effectively display measurements or trends.
+
+name: no_stack_with_bar_area_discrete_color
+A violation occurs when a bar or area chart uses a discrete or binned color channel but does not use stacking. Stacking is required to accurately represent grouped values in this context.
+
+name: stack_without_discrete_color_or_detail
+A violation occurs when stacking is enabled on a mark, but neither a discrete/binned color channel nor a detail channel is used. Stacking requires at least one of these to define how data should be grouped.
+
+name: stack_discrete
+A violation occurs when stacking is applied to a channel that is discrete or binned. Stacking must only be applied to continuous channels to ensure correct rendering of data aggregation.
+
+name: same_field
+Triggers when the same field is used exactly twice as an encoding for the same mark. This indicates a preference to avoid duplicating the same data field in multiple channels for a single mark.
+
+name: same_field_grt3
+Triggers when the same field is used three or more times as an encoding for the same mark. This indicates a stronger penalty for repeatedly using the same field excessively.
+
+name: number_categorical
+Triggers when a field of type `number` is encoded with a categorical scale type. This reflects a preference against treating numeric data as categorical.
+
+name: only_discrete
+Triggers when a mark has no continuous encodings — all its channels are discrete or binned.
+
+name: multi_non_pos
+Triggers when a single mark uses more than one non-positional channel (e.g., color, size, shape).
+
+name: non_pos_used_before_pos
+Triggers when a non-positional channel is used in a mark but neither `x` nor `y` positional channels are present.
+
+name: only_y
+Triggers when a mark has an encoding for `y` but no encoding for `x`.
+
+name: high_cardinality_ordinal
+Triggers when a field encoded with an ordinal scale has cardinality greater than 30.
+
+name: high_cardinality_categorical_grt10
+Triggers when a field encoded with a categorical scale has cardinality greater than 10.
+
+name: high_cardinality_shape
+Triggers when the shape channel is encoded with a field having cardinality greater than 8.
+
+name: high_cardinality_size
+Triggers when the size channel is present, and the `x` or `y` positional encoding is continuous and has cardinality greater than 100.
+
+name: horizontal_scrolling_x
+Triggers when the x-channel is discrete or binned and has cardinality greater than 50.
+
+name: log_scale
+Triggers when an encoding uses a log scale type.
+
+name: ordinal_scale
+Triggers when an encoding uses an ordinal scale type.
+
+name: categorical_scale
+Triggers when an encoding uses a categorical scale type.
+
+name: c_c_line
+Triggers when both x and y are continuous and the mark type is `line`.
+
+name: c_c_area
+Triggers when both x and y are continuous and the mark type is `area`.
+
+name: c_d_overlap_point
+Triggers when the x/y relationship is continuous by discrete, overlap is detected, and the mark type is `point`.
+
+name: c_d_overlap_bar
+Triggers when the x/y relationship is continuous by discrete, overlap is detected, and the mark type is `bar`.
+
+name: c_d_overlap_line
+Triggers when the x/y relationship is continuous by discrete, overlap is detected, and the mark type is `line`.
+
+name: c_d_overlap_area
+Triggers when the x/y relationship is continuous by discrete, overlap is detected, and the mark type is `area`.
+
+name: c_d_no_overlap_point
+Triggers when the x/y relationship is continuous by discrete, no overlap is detected, and the mark type is `point`.
+
+name: c_d_no_overlap_line
+Triggers when the x/y relationship is continuous by discrete, no overlap is detected, and the mark type is `line`.
+
+name: c_d_no_overlap_area
+Triggers when the x/y relationship is continuous by discrete, no overlap is detected, and the mark type is `area`.
+
+name: linear_color
+Triggers when the color channel is used with a linear scale type.
+
+name: linear_size
+Triggers when the size channel is used with a linear scale type.
+
+name: log_color
+Triggers when the color channel is used with a log scale type.
+
+name: log_size
+Triggers when the size channel is used with a log scale type.
+
+name: ordinal_x
+Triggers when the x-channel is used with an ordinal scale type.
+
+name: ordinal_color
+Triggers when the color channel is used with an ordinal scale type.
+
+name: ordinal_size
+Triggers when the size channel is used with an ordinal scale type.
+
+name: ordinal_shape
+Triggers when the shape channel is used with an ordinal scale type.
+
+name: categorical_color
+Triggers when the color channel is used with a categorical scale type.
+
+name: polar_coordinate
+Triggers when the view coordinates are set to `polar`.
+
+name: c_c_point
+Triggers when both x and y are continuous and the mark type is `point`.
+
+name: c_d_overlap_tick
+Triggers when the x/y relationship is continuous by discrete, overlap is detected, and the mark type is `tick`.
+
+name: c_d_no_overlap_bar
+Triggers when the x/y relationship is continuous by discrete, no overlap is detected, and the mark type is `bar`.
+
+name: d_d_point
+Triggers when both x and y are discrete and the mark type is `point`.
+
+name: d_d_rect
+Triggers when both x and y are discrete and the mark type is `rect`.
+
+name: log_x
+Triggers when the x-channel uses a log scale type.
+
+name: log_y
+Triggers when the y-channel uses a log scale type.
+
+name: ordinal_y
+Triggers when the y-channel uses an ordinal scale type.
