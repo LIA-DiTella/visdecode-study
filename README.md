@@ -4,7 +4,7 @@
 > **Martín Sinnona, Valentín Bonás, Emmanuel Iarussi, Viviana Siless**  
 > Universidad Torcuato Di Tella · CONICET · Universidad de Buenos Aires  
 
-[![arXiv](https://img.shields.io/badge/arXiv-Read%20Paper-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX)
+[![arXiv](https://img.shields.io/badge/arXiv-Read%20Paper-b31b1b.svg)](https://arxiv.org/abs/2602.20137)
 [![Principles](https://img.shields.io/badge/Principles-csv%20-28a745.svg)](principles.csv)
 [![Poster](https://img.shields.io/badge/Poster-pdf%20-8d32a8.svg)](study_poster.pdf)
 
@@ -64,7 +64,14 @@ We evaluate whether LLMs can:
 If you use this work, please cite:
 
 ```bibtex
-@inproceedings{sinnona2025llmvisrules,
+@misc{sinnona2026largelanguagemodelsunderstand,
+      title={Do Large Language Models Understand Data Visualization Rules?}, 
+      author={Martin Sinnona and Valentin Bonas and Emmanuel Iarussi and Viviana Siless},
+      year={2026},
+      eprint={2602.20137},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2602.20137}, 
 }
 
 
